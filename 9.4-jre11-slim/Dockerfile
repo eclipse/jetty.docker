@@ -1,12 +1,12 @@
 # DO NOT EDIT. Edit baseDockerfile-slim and use update.sh
 FROM openjdk:11-jre-slim
 
-ENV JETTY_VERSION 9.4.42.v20210604
+ENV JETTY_VERSION 9.4.43.v20210624
 ENV JETTY_HOME /usr/local/jetty
 ENV JETTY_BASE /var/lib/jetty
 ENV TMPDIR /tmp/jetty
 ENV PATH $JETTY_HOME/bin:$PATH
-ENV JETTY_TGZ_URL https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/$JETTY_VERSION/jetty-home-$JETTY_VERSION.tar.gz
+ENV JETTY_TGZ_URL https://oss.sonatype.org/content/repositories/jetty-1678/org/eclipse/jetty/jetty-home/9.4.43.v20210624/jetty-home-9.4.43.v20210624.tar.gz
 
 # GPG Keys are personal keys of Jetty committers (see https://github.com/eclipse/jetty.project/blob/0607c0e66e44b9c12a62b85551da3a0edce0281e/KEYS.txt)
 ENV JETTY_GPG_KEYS \
