@@ -40,16 +40,16 @@ for path in "${paths[@]}"; do
 
 	if [ -d "$path" ]; then
 		if [[ "$version" == "9.4" ]]; then
-			fullVersion="9.4.43.v20210624"
-			stagingNumber="1678"
+			fullVersion="9.4.43.v20210629"
+			stagingNumber="1684"
 		fi
 		if [[ "$version" == "10.0" ]]; then
 			fullVersion="10.0.6"
-			stagingNumber="1679"
+			stagingNumber="1682"
 		fi
 		if [[ "$version" == "11.0" ]]; then
 			fullVersion="11.0.6"
-			stagingNumber="1680"
+			stagingNumber="1683"
 		fi
 
 		if greaterThanOrEqualTo9.4 "${version}"; then
